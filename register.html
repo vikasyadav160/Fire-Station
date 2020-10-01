@@ -1,0 +1,87 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<style>
+body{
+   background-image:radial-gradient(circle,red,white,orange);
+}
+input[type=text], select{
+	   padding:12px 80px;
+	   margin:8px 0;
+	   display: block;
+	   border: 1px solid #CCC;
+	   border-radius: 4px;
+	   box-sizing: border-box;
+}
+input[type=number], select{
+        padding: 12px 80px:
+		margin: 8px 0;
+		display: block;
+		border: 1px solid #CCC;
+		border-radius: 4px;
+		box sizing: border-box;
+}
+input[type=email],select{
+        padding: 12px 80px;
+        margin: 8px 0;
+        display: block;
+        border: 1px solid #CCC;
+        border-radius: 4px;
+        box-sizing: border-box;		
+}
+input[type=password],select{
+        padding: 12px 80px;
+		margin: 8px 0;
+		display: block;
+		border:1px solid #CCC;
+		border-radius: 4px;
+		box-sizing: border-box;
+}
+input[type=repeat password],select{
+        padding: 12px 20px;
+		margin: 8px 0;
+		display: block;
+		border:1px solid #CCC;
+		border-radius: 4px;
+		box-sizing: border-box;
+}
+h1{
+   color:blue;
+   text-decoration:underline;
+  }
+
+</style>
+</head>
+<body>
+<div>
+	<img  src="up.jpeg" id="image1" height="120px" width="120px" hspace="10dp" margin="60dp" >
+  <h1 style="color:#061655 ; font-style:none; text-align: center; padding-left:408px; font-size: 54px;display: inline;">FIRE STATION</h1>
+  	</div>
+  	<div name="div1" id="div1" class="topnav">
+  <a name="" id="home" href="fire1.html">Home</a>
+  <a href="register.html">Register</a>
+  <a href="login.html">Login</a>
+  <a href="details.html">Details</a>
+  <a href="fire station list.html">List</a>
+  </div>
+<center>
+<h1>Register</h1>
+<FORM ACTION="rsave.jsp" METHOD="GET">
+<hr>
+   <label for="user name"><b>user name</b></label>
+   <input type="text" placeholder="user name" name="name"required><br>
+   <label for="contact number"><b>contact number</b></label>
+   <input type="text" placeholder="contact number" name="cnumber"required><br>
+   <label for="email"><b>email</b></label>
+   <input type="text" placeholder="email" name="email"required><br>
+   <label for="password"><b>password</b></label>
+   <input type="password" placeholder="password" name="password"required><br>
+   <label for="repeat password"><b>repeat password</b></label>
+   <input type="password" placeholder="repeat password" name="rpassword"required><br>
+ </hr>
+ <button type="submit" value="Register button">Register</button>
+ </div>
+ </FORM>
+ </center>
+</body>
+</html>

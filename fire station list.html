@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<style>
+h1{
+color:blue;
+text-decoration:underline;
+}
+body{
+background-image:radial-gradient(circle,red,white,orange);
+}
+</style>
+<script type="text/javascript" language="javascript">
+function loadData()
+{
+  var obj=new XMLHttpRequest();
+	obj.onreadystatechange=function()
+	{   
+		if((obj.readyState==4)&&(obj.status==200))
+		{ 
+			//alert(obj.
+			document.getElementById("table").innerHTML=obj.responseText;
+		}
+	}
+	obj.open("get","user.jsp",true);
+	obj.send();
+}
+</script>
+</head>
+<body onload="loadData()">
+<div>
+	<img  src="up.jpeg" id="image1" height="120px" width="120px" hspace="10dp" margin="60dp" >
+  <h1 style="color:#061655 ; font-style:none; text-align: center;padding-left:408px;font-size: 54px;display: inline;">Fire Station</h1>
+  	</div>
+  	<div name="div1" id="div1" class="topnav">
+  <a name="" id="home" href="fire1.html">Home</a>
+  <a href="register.html">Register</a>
+  <a href="login.html">Login</a>
+  <a href="details.html">Details</a>
+  <a href="fire station list.html">List</a>
+  </div>
+  <h1 align="center">Fire Station List</h1>
+  <div id="table" align="center"></div>
+</body>
+</html>
